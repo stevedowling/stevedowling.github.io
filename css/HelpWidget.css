@@ -1,0 +1,47 @@
+iframe#HelpIframe {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  width: 1000px; }
+
+@media (max-width: 1000px) {
+  iframe#HelpIframe {
+    width: 100%;
+    /* Take up the whole screen on smaller screens */ } }
+
+div#CloseHelpIframe {
+  position: absolute;
+  display: block;
+  right: 27px;
+  top: 7px;
+  font-family: "Proxima Nova Normal", Helvetica, Arial, sans-serif;
+  font-style: 18px;
+  font-weight: bold;
+  color: #918f8f;
+  cursor: pointer;
+  z-index: 200000; }
+
+button#ShowHelp.hidden {
+  display: none; }
+
+button#ShowHelp {
+  display: block;
+  position: fixed;
+  background-color: #cb2c30;
+  color: white;
+  border-color: #a12e2e;
+  font-family: "proxima-nova", Arial, sans-serif;
+  font-size: 14px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  cursor: pointer;
+  padding: 8px 10px 21px;
+  z-index: 100000;
+  top: 300px;
+  right: -15px;
+  transform: rotate(270deg);
+  transition-duration: 300ms; }
+
+button#ShowHelp:hover {
+  right: -9px; }
