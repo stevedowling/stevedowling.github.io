@@ -4,7 +4,8 @@ iframe#HelpIframe {
   bottom: 0;
   height: 100%;
   width: 1000px;
-  z-index: 3; }
+  z-index: 3;
+  background: url(https://icons8.com/preloaders/preloaders/1481/Book.gif) center center no-repeat, white; }
 
 @media (max-width: 1000px) {
   iframe#HelpIframe {
@@ -14,8 +15,10 @@ iframe#HelpIframe {
 div#CloseHelpIframe {
   position: absolute;
   display: block;
-  right: 27px;
-  top: 7px;
+  right: 17px;
+  top: 0;
+  background-color: #e8e8e8;
+  padding: 6px 10px;
   font-family: "Proxima Nova Normal", Helvetica, Arial, sans-serif;
   font-style: 18px;
   font-weight: bold;
