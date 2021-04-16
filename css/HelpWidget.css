@@ -22,9 +22,6 @@ div#CloseHelpIframe {
   cursor: pointer;
   z-index: 200000; }
 
-button#ShowHelp.hidden {
-  display: none; }
-
 button#ShowHelp {
   display: block;
   position: fixed;

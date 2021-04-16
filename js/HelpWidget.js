@@ -10,11 +10,11 @@ var HelpWidget = /** @class */ (function () {
         this._helpButton = document.createElement('button');
         this._helpButton.id = 'ShowHelp';
         this._helpButton.innerHTML = 'HELP';
-        document.body.appendChild(this._helpButton);
+        this.showHelpButton();
         this._helpButton.addEventListener('click', function () { _this.showHelp(); }, false);
     }
     HelpWidget.prototype._getHelpUrl = function () {
-        // TODO: Add some logic here to return the right iFrame source
+        // TODO: Add some logic here to return the right iFrame source 
         var iframeUrl = 'TestPage.html';
         var currentLocation = window.location.href; // Use this to change the iFrame source
         var iframeSourceOverride = document.getElementById('IframeSourceOverride').value;
@@ -43,11 +43,11 @@ var HelpWidget = /** @class */ (function () {
     };
     HelpWidget.prototype.showHelpButton = function () {
         console.log("showHelpButton called");
-        this._helpButton.classList.remove('hidden');
+        document.body.appendChild(this._helpButton);
     };
     HelpWidget.prototype.hideHelpButton = function () {
         console.log("hideHelpButton called");
-        this._helpButton.classList.add('hidden');
+        this._helpButton.remove();
     };
     return HelpWidget;
 }());
