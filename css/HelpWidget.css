@@ -14,14 +14,11 @@ iframe#HelpIframe {
 
 div#CloseHelpIframe {
   position: absolute;
-  display: block;
-  right: 17px;
-  top: 0;
-  background-color: #e8e8e8;
+  right: 21px;
+  top: 11px;
+  height: 14px;
+  width: 14px;
   padding: 6px 10px;
-  font-family: "Proxima Nova Normal", Helvetica, Arial, sans-serif;
-  font-style: 18px;
-  font-weight: bold;
   color: #918f8f;
   cursor: pointer;
   z-index: 4; }
